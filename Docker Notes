@@ -1,0 +1,22 @@
+Docker:
+Create Network
+
+docker network create dev-network
+
+docker run --restart always --name mysql8.0 --net dev-network -v /c/Users/MallikarjunaSiddappa/Desktop/azuredeops/dockerPractice/mysqldata/8.0:/var/lib/mysql -p 3306:3306 -d -e MYSQL_ROOT_PASSWORD=Mysql@123 mysql:8.0
+
+docker container run --restart always --name bankend --net dev-network -p 8080:8080 -d beginneracademy/kannadabackend:latest
+
+
+docker container run --restart always --name frontend --net dev-network -p 3000:3000 -d beginneracademy/frontendkannada
+
+
+
+docker network create dev-network
+mysql -u root -p
+beginner academy
+1:46 PM
+show databases;
+create database db;
+use db;
+show tables;
