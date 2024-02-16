@@ -20,3 +20,12 @@ show databases;
 create database db;
 use db;
 show tables;
+
+denied: requested access to the resource is denied
+docker login -u "mallijs003@gmail.com" -p "Aditi01*" docker.io
+
+Building image
+docker build -t newinginx .
+
+
+
