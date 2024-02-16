@@ -21,11 +21,32 @@ create database db;
 use db;
 show tables;
 
-denied: requested access to the resource is denied
-docker login -u "mallijs003@gmail.com" -p "Aditi01*" docker.io
+List all running and exited containers:
+-> docker ps -a
 
-Building image
-docker build -t newinginx .
+Delete Container:
+-> docker container rm container id
+
+Delete image:
+-> docker rmi imageid
+
+denied: requested access to the resource is denied:
+-> docker login -u "mallijs003@gmail.com" -p "Aditi01*" docker.io
+
+Building image:
+-> docker build -t imagename .     . is current working directory
+
+Run the image after building:
+-> docker container run --name containername -dit -p 8080:80 imagename
+
+Rename the image:
+-> docker tag imagename newimagename
+
+Container stop:
+-> docker containe stop containerid
+
+Container restart:
+-> docker restart containerid
 
 
 
