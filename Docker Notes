@@ -48,5 +48,10 @@ Container stop:
 Container restart:
 -> docker restart containerid
 
+Execute script for container 
+-> docker exec -it fe82d4a95cda sh  , for windows or the input device is not a TTY. use below script
+-> winpty docker exec -it fe82d4a95cda sh
+
+
 
 
