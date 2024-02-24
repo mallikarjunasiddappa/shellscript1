@@ -7,6 +7,9 @@ docker run --restart always --name mysql8.0 --net dev-network -v /c/Users/Mallik
 
 docker container run --restart always --name bankend --net dev-network -p 8080:8080 -d beginneracademy/kannadabackend:latest
 
+mvn clean
+mvn package -Dmaven.test.skip=true
+
 
 docker container run --restart always --name frontend --net dev-network -p 3000:3000 -d beginneracademy/frontendkannada
 
