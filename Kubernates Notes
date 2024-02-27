@@ -19,6 +19,16 @@ Check the details of the pod
 Delete pod:
 -> kubectk delete po imagename
 
+Check the services are running
+-> kubectl get svc
+
+create a service
+kubectl expose po/mynginx --type="NodePort" --port 80
+
+port forwarding -  it is only for minikube to test the application locally otherwise it is not required
+kubectl port-forwarding service/imagename 8080:80
+
+
 
 
 Unable to resolve the current Docker CLI context "default": context "default": context not found: open
