@@ -5,10 +5,10 @@ Statrt the minikube:
 -> minikube start
 
 Check the number of nodes created in minikube
--> kubectl get no
+-> kubectl get no ->  kubectl get no -o wide
 
 Check the number of pods created in minikube
--> kubectl get po
+-> kubectl get po   ->  kubectl get po -o wide
 
 
 Unable to resolve the current Docker CLI context "default": context "default": context not found: open
