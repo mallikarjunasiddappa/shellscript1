@@ -10,6 +10,10 @@ Check the number of nodes created in minikube
 Check the number of pods created in minikube
 -> kubectl get po   ->  kubectl get po -o wide
 
+Check the details of the pod 
+-> kubectl describe po mynginx
+
+
 
 Unable to resolve the current Docker CLI context "default": context "default": context not found: open
 -> docker context use defaul
