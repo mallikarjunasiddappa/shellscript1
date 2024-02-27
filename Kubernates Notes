@@ -10,6 +10,9 @@ Check the number of nodes created in minikube
 Check the number of pods created in minikube
 -> kubectl get po   ->  kubectl get po -o wide
 
+Login to pod and execute the scripts
+-> kubectl exec -it mypodimagename sh
+
 Check the details of the pod 
 -> kubectl describe po mynginx
 
@@ -17,3 +20,8 @@ Check the details of the pod
 
 Unable to resolve the current Docker CLI context "default": context "default": context not found: open
 -> docker context use defaul
+
+kubectl exec [POD] [COMMAND] is DEPRECATED and will be removed in a future version. Use kubectl exec [POD] -- [COMMAND] instead.
+Unable to use a TTY - input is not a terminal or the right kind of file
+ -> if get above error use winpty begining of your aommand
+eg: winpty kubectl exec -it imagename sh
