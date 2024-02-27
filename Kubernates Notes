@@ -1,7 +1,14 @@
 Check the minikube status:
 -> minikube status
+
 Statrt the minikube:
 -> minikube start
+
+Check the number of nodes created in minikube
+-> kubectl get no
+
+Check the number of pods created in minikube
+-> kubectl get po
 
 
 Unable to resolve the current Docker CLI context "default": context "default": context not found: open
