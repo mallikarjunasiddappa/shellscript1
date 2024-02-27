@@ -1,0 +1,8 @@
+Check the minikube status:
+-> minikube status
+Statrt the minikube:
+-> minikube start
+
+
+Unable to resolve the current Docker CLI context "default": context "default": context not found: open
+-> docker context use defaul
