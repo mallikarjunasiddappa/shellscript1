@@ -11,10 +11,13 @@ Check the number of pods created in minikube
 -> kubectl get po   ->  kubectl get po -o wide
 
 Login to pod and execute the scripts
--> kubectl exec -it mypodimagename sh
+-> winpty kubectl exec -it mypodimagename sh
 
 Check the details of the pod 
 -> kubectl describe po mynginx
+
+Delete pod:
+-> kubectk delete po imagename
 
 
 
