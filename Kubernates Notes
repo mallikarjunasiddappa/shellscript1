@@ -10,6 +10,9 @@ Check the number of nodes created in minikube
 Check the number of pods created in minikube
 -> kubectl get po   ->  kubectl get po -o wide
 
+Create nginx pod:
+-> kubectl run mynginx --image=nginx
+
 Login to pod and execute the scripts
 -> winpty kubectl exec -it mypodimagename sh
 
